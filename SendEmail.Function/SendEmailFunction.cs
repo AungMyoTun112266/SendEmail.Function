@@ -8,6 +8,7 @@ namespace SendEmail.Function
 {
     public class SendEmailFunction
     {
+        // All credentials are stored in EnvVariables at Azure function
         private readonly ILogger<SendEmailFunction> _logger;
         private readonly string senderEmail = Environment.GetEnvironmentVariable("SenderEmail");
         private readonly string senderDisplayName = Environment.GetEnvironmentVariable("SenderDisplayName");
